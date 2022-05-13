@@ -43,3 +43,42 @@
 .home__buttons-button:nth-child(2) {
   @apply bg-[rgba(0,0,0,0.1)] text-grey;
 }
+
+/* ===== PRICING SECTION ===== */
+.pricing__content {
+  @apply w-[310px] grid gap-8 grid-rows-[max-content] p-8 bg-white rounded-[2rem];
+}
+.pricing__content-class {
+  @apply text-black font-semibold mb-2;
+}
+.pricing__content-title {
+  @apply text-[32px] text-black font-semibold mb-4;
+}
+.pricing__content-text {
+  @apply text-grey leading-7;
+}
+.pricing__content-list {
+  @apply flex flex-col gap-4;
+}
+.pricing__content-item {
+  @apply inline-flex items-center gap-2 text-black font-medium;
+}
+.pricing__content-check {
+  @apply inline-flex p-[.2rem] bg-[rgba(0,0,0,0.05)] rounded-full text-[1rem] text-purple;
+}
+.pricing__content:nth-child(2) {
+  @apply bg-purple;
+}
+.pricing__content:nth-child(2) .pricing__content-class,
+.pricing__content:nth-child(2) .pricing__content-title,
+.pricing__content:nth-child(2) .pricing__content-text,
+.pricing__content:nth-child(2) .pricing__content-item,
+.pricing__content:nth-child(2) .pricing__content-check {
+  @apply text-white;
+}
+.pricing__content:nth-child(2) .pricing__content-check {
+  @apply bg-[rgba(255,255,255,0.5)] text-purple;
+}
+.pricing__content:nth-child(2) .pricing__content-button {
+  @apply bg-blue;
+}
