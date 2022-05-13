@@ -1,4 +1,24 @@
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
 /* ===== Add the Tailwind directives to your CSS ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== REUSABLE CSS CLASS ===== */
+@layer components {
+  /* section class */
+  .section {
+    @apply pt-32 pb-16;
+  }
+  .section-title {
+    @apply text-center text-[26px] text-black font-bold mb-4;
+  }
+  .section-text {
+    @apply text-center text-grey leading-7 mb-8;
+  }
+  .section-button {
+    @apply flex justify-center py-4 px-8 bg-purple rounded-[1rem] text-white font-medium;
+  }
+}
