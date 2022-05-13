@@ -23,7 +23,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center lg:relative"
       >
         <a
           href="#"
@@ -41,7 +41,9 @@
           class="header__menu md:flex md:items-center md:gap-6"
           id="header-menu"
         >
-          <ul class="header__list flex flex-col gap-6 md:flex-row">
+          <ul
+            class="header__list flex flex-col gap-6 md:flex-row lg:absolute lg:left-[50%] lg:translate-x-[-50%] lg:gap-8"
+          >
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -77,18 +79,22 @@
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
       <section class="home section">
-        <div class="home__container container grid gap-12">
-          <div class="home__data text-center justify-self-center xs:w-[400px]">
+        <div
+          class="home__container container grid gap-12 lg:grid-cols-2 lg:items-center"
+        >
+          <div
+            class="home__data text-center justify-self-center xs:w-[400px] lg:w-auto lg:text-left"
+          >
             <h1 class="home__title section-title">
               Always Connected. <br />
               No Lagging.
             </h1>
-            <p class="home__text section-text">
+            <p class="home__text section-text lg:w-[420px]">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form
             </p>
             <div
-              class="home__buttons flex flex-col gap-4 xs:flex-row xs:place-content-center"
+              class="home__buttons flex flex-col gap-4 xs:flex-row xs:place-content-center lg:place-content-start"
             >
               <a href="#" class="home__buttons-button section-button"
                 >See Pricing</a
@@ -102,7 +108,7 @@
           <img
             src="./src/img/home image.png"
             alt=""
-            class="home__img justify-self-center sm:w-[500px]"
+            class="home__img justify-self-center sm:w-[500px] lg:w-auto"
           />
         </div>
       </section>
@@ -158,7 +164,9 @@
               </p>
             </div>
 
-            <div class="pricing__group grid justify-center gap-8">
+            <div
+              class="pricing__group grid justify-center gap-8 lg:flex lg:items-start"
+            >
               <div class="pricing__content">
                 <div>
                   <h3 class="pricing__content-class">BASIC</h3>
