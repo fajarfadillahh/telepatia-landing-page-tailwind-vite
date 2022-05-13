@@ -85,3 +85,8 @@
 .pricing__content:nth-child(2) .pricing__content-button {
   @apply bg-blue;
 }
+
+/* ===== ::SELECTION ===== */
+::selection {
+  @apply bg-purple bg-opacity-50 text-white;
+}
